@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Ubuntu:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+
+header {
+  background-color: #f8f8f8;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.active {
+  border-bottom: 3px solid #707070;
+}
+
+.title {
+  color: #143774;
+  font-family: "Lora", serif;
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: #1792d2;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+
+.main--article {
+  padding: 1em 0 2em 0;
+  /* background-color: */
+  border-bottom: 2px solid #707070;
+}
+
+.main--article__info {
+  color: #707070;
+  margin: 2em 0 1.5em;
+}
+
+.main--article__title,
+.about-me {
+  color: #143774;
+}
+
+.main--article__body {
+  color: #707070;
+  margin: 1.5em 0;
+  line-height: 1.5em;
+}
+
+.main--article__body span {
+  color: #1792d2;
+  text-decoration: underline;
+}
+
+.body--continue {
+  color: #1792d2;
+}
+
+.recent--posts {
+  padding: 2.5em 0 1em 0;
+}
+
+.recent--post__first p {
+  text-align: right;
+}
+
+.recent--post__second {
+  margin-top: -3em;
+}
+
+.side--container {
+  border: 1em solid #ebebeb;
+  padding: 1.5em;
+  margin: 2em 0;
+}
+
+.aside--title {
+  color: #143774;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.aside--subtitle {
+  color: #143774;
+  /* margin-top: 1em; */
+  font-size: 1.2em;
+}
+
+.aside--recent__posts {
+  padding: 2em 0;
+  border-bottom: 2px solid #707070;
+}
+
+.aside--recent__posts:last-child {
+  border-style: none;
+  padding-bottom: 1em;
+}
+
+.aside--recent__posts img,
+.side--container img {
+  height: 10em;
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 1050px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo--title {
+    margin-bottom: 1.5em;
+  }
+}
